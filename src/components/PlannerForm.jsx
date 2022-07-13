@@ -1,4 +1,5 @@
 import React from "react";
+import Myself from "../assets/Myself";
 import Team from "../assets/Team";
 import { useForm } from "../context/Form-Context";
 import Button from "./Button";
@@ -33,7 +34,7 @@ const PlannerForm = () => {
           selected={myself}
           cardText={"Write better. Think more clearly. Stay organized"}
           cardHeader={"For myself"}
-          icon={<Team fill={myself} />}
+          icon={<Myself fill={myself} />}
         />
         <WorkspaceCard
           onClick={() => workWithHandler("withTeam")}
