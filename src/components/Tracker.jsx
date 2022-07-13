@@ -15,11 +15,17 @@ const Tracker = () => {
     setCurrentLayout("successPage");
   };
 
+  const levelClickValidator = (ind, arr) => {
+    arr.slice(0, ind).every((level) => level === true)
+      ? setCurrentLayout(allLevels[ind])
+      : alert("Complete the previous Form(s)");
+  };
+
   return (
     <div className="flex gap-20">
       {levelsCompleted.map((eachLevel, ind, arr) => (
         <div
-          onClick={() => setCurrentLayout(allLevels[ind])}
+          onClick={() => levelClickValidator(ind, arr)}
           key={ind}
           className={`cursor-pointer transition-all each_level relative after:bg-slate-200 after:content-[' '] after:cursor-default after:w-20 after:h-[2px] after:absolute after:left-full ${
             ind === 0 || arr[ind - 1]
