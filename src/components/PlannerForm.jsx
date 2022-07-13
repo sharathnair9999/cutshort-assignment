@@ -21,8 +21,10 @@ const PlannerForm = () => {
 
   return (
     <div>
-      <p className="text-3xl font-bold">How are you planning to use Eden?</p>
-      <p className="text-center mt-3 font-medium text-sm text-slate-500">
+      <p className="md:text-3xl text-2xl font-bold">
+        How are you planning to use Eden?
+      </p>
+      <p className="text-center mt-3 font-medium md:text-sm text-xs text-slate-500">
         We'll streamline your setup experience accordingly.
       </p>
       <div className="flex justify-center items-center gap-4 mt-8">

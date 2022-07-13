@@ -26,7 +26,7 @@ function App() {
     }
   };
   return (
-    <div className="font-inter h-[calc(100vh-10rem)] flex justify-start pt-24 gap-14 items-center flex-col ">
+    <div className="font-inter h-[calc(100vh-10rem)] flex justify-start pt-16 gap-14 items-center flex-col px-4 ">
       <Logo />
       <Tracker />
       {currentLayout(layout)}

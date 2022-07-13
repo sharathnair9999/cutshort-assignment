@@ -5,7 +5,7 @@ const Button = ({ btnText = "Create Workspace", clickHandler, className }) => {
     <button
       type="submit"
       onClick={clickHandler}
-      className={`w-full max-w-sm py-3 text-white text-sm rounded-md bg-cta hover:bg-cta/95 transition-all hover:shadow-md ${className}`}
+      className={`w-full md:max-w-sm max-w-xs py-3 text-white md:text-sm text-xs rounded-md bg-cta hover:bg-cta/95 transition-all hover:shadow-md ${className}`}
     >
       {btnText}
     </button>

@@ -21,8 +21,10 @@ const NameForm = () => {
   };
   return (
     <div>
-      <p className="text-3xl font-bold">Welcome! First things first...</p>
-      <p className="text-center mt-3 font-medium text-sm text-slate-500">
+      <p className="md:text-3xl text-2xl font-bold">
+        Welcome! First things first...
+      </p>
+      <p className="text-center mt-3 font-medium md:text-sm text-xs text-slate-500">
         You can always change them later.
       </p>
       <form

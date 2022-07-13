@@ -21,8 +21,10 @@ const WorkspaceForm = () => {
   };
   return (
     <div>
-      <p className="text-3xl font-bold">Let's setup a home for all your work</p>
-      <p className="text-center mt-3 font-medium text-sm text-slate-500">
+      <p className="md:text-3xl text-2xl font-bold">
+        Let's setup a home for all your work
+      </p>
+      <p className="text-center mt-3 font-medium md:text-sm text-xs text-slate-500">
         You can always create another workspace later.
       </p>
       <form
@@ -33,7 +35,7 @@ const WorkspaceForm = () => {
           name="name"
           label={"Workspace Name"}
           value={workspaceDetails.name}
-          required
+          required={true}
           onChange={(e) => handleChange(e, setWorkSpaceDetails)}
           placeholder="Eden"
         />
