@@ -29,7 +29,7 @@ const WorkspaceForm = () => {
       </p>
       <form
         onSubmit={workspaceFormHandler}
-        className="mt-14 flex flex-col gap-10 justify-center items-center w-full"
+        className="mt-14 flex flex-col gap-10 justify-center items-center w-full max-w-xs md:max-w-md"
       >
         <InputField
           name="name"

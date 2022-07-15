@@ -22,19 +22,19 @@ const Tracker = () => {
   };
 
   return (
-    <div className="flex md:gap-20 gap-16">
+    <div className="flex md:gap-16 gap-12">
       {levelsCompleted.map((eachLevel, ind, arr) => (
         <div
           onClick={() => levelClickValidator(ind, arr)}
           key={ind}
-          className={`cursor-pointer transition-all each_level relative after:bg-slate-200 after:content-[' '] after:cursor-default md:after:w-20 after:w-16 after:h-[2px] after:absolute after:left-full ${
+          className={`cursor-pointer font-medium transition-all each_level relative after:bg-slate-200 after:content-[' '] after:cursor-default md:after:w-16 after:w-12 after:h-[2px] after:absolute after:left-full ${
             ind === 0 || arr[ind - 1]
               ? `bg-cta text-white before:bg-cta before:content-[' '] before:z-10 before:cursor-default ${
                   eachLevel
-                    ? "md:before:w-20 before:w-16"
-                    : "md:before:w-10 before:w-8"
+                    ? "md:before:w-16 before:w-12"
+                    : "md:before:w-8 before:w-6"
                 }  before:h-[2px] before:absolute before:left-full`
-              : "bg-white text-cta border-slate-200  outline-1 outline outline-slate-200 "
+              : "bg-white text-black  border-slate-200  outline-1 outline outline-slate-200 "
           } md:text-sm text-xs p-4 flex justify-center items-center w-10 h-10 rounded-full font-light`}
         >
           {ind + 1}
@@ -42,10 +42,10 @@ const Tracker = () => {
       ))}
       <div
         onClick={openSuccessLayout}
-        className={`cursor-pointer each_level  transition-all ${
+        className={`cursor-pointer each_level font-medium transition-all ${
           allCompleted
             ? "bg-cta text-white "
-            : "bg-white text-cta border-slate-200 outline-1 outline outline-slate-200"
+            : "bg-white text-black border-slate-200 outline-1 outline outline-slate-200"
         } md:text-sm text-xs p-4 flex justify-center items-center w-10 h-10 rounded-full font-light`}
       >
         {levelsCompleted.length + 1}
